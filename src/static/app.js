@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         messageDiv.className = "success";
         signupForm.reset();
         // Refresh the page to show updated participants
-        window.location.reload();
+        window.location.reload(true);
       } else {
         messageDiv.textContent = result.detail || "An error occurred";
         messageDiv.className = "error";
